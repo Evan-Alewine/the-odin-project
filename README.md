@@ -16,6 +16,9 @@
 </li>
 </ol>
 </ul>
+<br>
+<a href="https://evan-alewine.github.io/the-odin-project/projectOne-Recipes/">Project Live Preview</a>
+<br>
 <h2>Project Two: CSS Positioning</h2>
 <p>Project one demonstrates my understanding of CSS for styling web-pages and positioning content.</p>
 <p>The project details are as follows:</p>
@@ -29,4 +32,6 @@
 <br>
 <p>Between this and project one, we have demonstrated a solid understanding of creating static websites.
 </ul>
-
+<br>
+<a href="https://evan-alewine.github.io/the-odin-project/projectTwo-CSSPosition/">Project Live Preview</a>
+<br>

@@ -5,7 +5,7 @@
 <p>Project one demonstrates my understanding of CSS for styling web-pages and positioning content.</p>
 <p>The project details are as follows:</p>
 <ul>
-<li><p>Create an styled web-page utilizing flex-box properties<br>This demonstrates the following:</p>
+<li><p>Create an styled web-page to represent <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png">this page</a><br>This demonstrates the following:</p>
 <ol>
 <li>An understanding of CSS Positioning, including properties like display, padding, margins, and especially flex properties. </li>
 </li>
@@ -14,5 +14,5 @@
 <br>
 <p>Between this and project one, we have demonstrated a solid understanding of creating static websites.
 </ul>
-
-
+<br>
+<a href="https://evan-alewine.github.io/the-odin-project/projectTwo-CSSPosition/">Project Live Preview</a>
