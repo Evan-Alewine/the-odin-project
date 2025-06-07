@@ -7,7 +7,14 @@
 }
 
 * {font-family: Verdana;}
-body {margin: 0px;}
+
+body {
+    margin: 0px;
+    max-width: 1200px;
+    justify-self: center;
+    border: 1px solid black;
+    background-color: #1f1f1f;
+}
 
 body > div, body > nav {
     padding: 0px 15% 0px 15%;
@@ -86,8 +93,13 @@ body > div, body > nav {
     }
 
 /* First Section */
-    .section {margin-bottom: 7%;}
+    .section {
+        padding: 5% 15% 5% 15%;
+        background-color: #ffff;
+    }
     .infoSection h1, .infoSection p {text-align: center;}
+
+    .infoSection h1{margin: -24px 0px 36px 0px;}
 
     .infoSection .col4 { 
         flex: 1;
