@@ -11,12 +11,15 @@
 body {
     background-color: var(--background);
 }
-
+.bodyDiv {
+    display: flex;
+    justify-content: center;
+}
 .content {
     min-width: 1130px;
-    width: 80%;
-    max-width: 80%;
+    max-width: 1130px;
     min-height: 1000px;
+    max-height: 1000px;
     display: flex;
     flex-direction: column;
     justify-self: center;
@@ -31,14 +34,26 @@ body {
     border-bottom: 2px solid var(--background);
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 .header h1 {
     color: var(--lightText);
-    margin: 0px 10px 0px 10px;
+    padding-left: 10px;
+}
+.Score {
+    padding-right: 10px;
+    color: var(--lightText);
+    font-weight: bold;
+}
+#Wins {
+    color: rgba(18, 182, 51, 0.8);
+}
+#Losses {
+    color: rgba(243, 68, 68, 0.8);
 }
 .display {
-    min-height: 700px;
-    max-height: 700px;
+    min-height: 550px;
+    max-height: 550px;
     min-width: 100%;
     padding-top: 25px;
     display: flex;
@@ -56,7 +71,6 @@ body {
     background-color: var(--lightbg);
 
 }
-
 .computerChoice {
     height: 100%;
     font-size: 200px;
@@ -65,8 +79,6 @@ body {
     align-items: center;
     
 }
-
-
 .optionsSection {
     min-width: 100%;
     max-width: 100%;
@@ -138,13 +150,10 @@ body {
     opacity: 0;
     cursor: pointer;
 }
-
 .locked {
     opacity: .6;
     pointer-events: none;
 }
-
-
 .confirm {
     max-width: 50%;
     min-width: 50%;
@@ -160,7 +169,6 @@ body {
     border: 2px solid var(--background);
     cursor: pointer;
 }
-
 .invisible {
     display: none;
     visibility: hidden;

@@ -20,6 +20,14 @@ function getComputerChoice() {
     document.getElementById('shootButton').classList.add('invisible');
     document.getElementById('replayButton').classList.remove('invisible');
     
+    const winElement = document.getElementById('Wins');
+    const drawElement = document.getElementById('Draws');
+    const lossElement = document.getElementById('Losses');
+
+    const currentWins = parseInt(winElement.textContent, 10);
+    const currentDraws = parseInt(drawElement.textContent, 10);
+    const currentLosses = parseInt(lossElement.textContent, 10);
+
     let randomNumber = Math.random();
     let randomInt = Math.floor(randomNumber * 10);
         if (randomInt == 9) {
@@ -33,15 +41,20 @@ function getComputerChoice() {
                     console.log("You Win!");
                     result.textContent = 'You Win!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(18, 182, 51, 0.8)';
+                    const newWins = currentWins + 1;
+                    winElement.textContent = newWins;
                 } else if (playerChoice == 'Rock') {
                     console.log("It's a Draw!");
                     result.textContent = 'It\'s a Draw!';
-                    result.textContent = 'You Win!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(255, 255, 255, 0.65)';
+                    const newDraws = currentDraws + 1;
+                    drawElement.textContent = newDraws;
                 } else {
                     console.log("You Lose!");
                     result.textContent = 'You Lose!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(243, 68, 68, 0.8)';
+                    const newLosses = currentLosses + 1;
+                    lossElement.textContent = newLosses;
                 }
         } else if (randomInt > 3) {
             console.log("Player Chooses: " + playerChoice);
@@ -51,16 +64,21 @@ function getComputerChoice() {
                 if (playerChoice == 'Scissors') {
                     console.log("You Win!");
                     result.textContent = 'You Win!';
-                    result.textContent = 'You Win!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(18, 182, 51, 0.8)';
+                    const newWins = currentWins + 1;
+                    winElement.textContent = newWins;
                 } else if (playerChoice == 'Paper') {
                     console.log("It's a Draw!");
                     result.textContent = 'It\'s a Draw!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(255, 255, 255, 0.65)';
+                    const newDraws = currentDraws + 1;
+                    drawElement.textContent = newDraws;
                 } else {
                     console.log("You Lose!");
                     result.textContent = 'You Lose!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(243, 68, 68, 0.8)';
+                    const newLosses = currentLosses + 1;
+                    lossElement.textContent = newLosses;
                 }
         } else {
             console.log("Player Chooses: " + playerChoice);
@@ -70,19 +88,23 @@ function getComputerChoice() {
                 if (playerChoice == 'Rock') {
                     console.log("You Win!");
                     result.textContent = 'You Win!';
-                    result.textContent = 'You Win!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(18, 182, 51, 0.8)';
+                    const newWins = currentWins + 1;
+                    winElement.textContent = newWins;
                 } else if (playerChoice == 'Scissors') {
                     console.log("It's a Draw!");
                     result.textContent = 'It\'s a Draw!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(255, 255, 255, 0.65)';
+                    const newDraws = currentDraws + 1;
+                    drawElement.textContent = newDraws;
                 } else {
                     console.log("You Lose!");
                     result.textContent = 'You Lose!';
                     document.getElementById('outcomeDisplay').style.boxShadow = '0px 5px rgba(243, 68, 68, 0.8)';
+                    const newLosses = currentLosses + 1;
+                    lossElement.textContent = newLosses;
                 }
         }
-
     return;
 }
 
