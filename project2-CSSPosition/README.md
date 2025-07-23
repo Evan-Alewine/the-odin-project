@@ -11,8 +11,8 @@
 </li>
 <li>CSS formatting, and decoration with colors, borders, buttons, variable inputs var(--theme), and font changes.
 </ol>
+</ul>
 <br>
 <p>Between this and project one, we have demonstrated a solid understanding of creating static websites.
-</ul>
 <br>
 <a href="https://evan-alewine.github.io/the-odin-project/projectTwo-CSSPosition/">Project Live Preview</a>
