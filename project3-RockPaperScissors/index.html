@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS Game</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="content">
+    <div class="header">
+        <h1>RPS Game</h1>
+    </div>
+        <div class="display">
+            <div id="outcomeDisplay" class="resultContianer">
+                <h1>Computer Choice:</h1>
+                <span class="computerChoice">
+                    <i id="computerChoiceDisplay" class="fa-solid fa-question"></i>
+                </span>
+                <h1 class="result">Result: <span id="resultDisplay">???</span></h1>
+            </div>
+        </div>
+
+        <div class="optionsSection">
+        <div class="optionsBody">
+            <div class="optionsHeader">
+                <h1 class="playerChoice">Choose One:</h1>
+            </div>
+        <div class="optionsContainer">
+            <span class="option">
+                <input type="radio" name="playerChoice" value="Rock">
+                <i class="fa-solid fa-hand-fist"></i>
+                <h2>Rock</h2>
+            </span>
+            <span class="option">
+                <input type="radio" name="playerChoice" value="Paper">
+                <i class="fa-solid fa-hand"></i>
+                <h2>Paper</h2>
+            </span>
+            <span class="option">
+                <input type="radio" name="playerChoice" value="Scissors">
+                <i class="fa-solid fa-hand-scissors"></i>
+                <h2>Scissors</h2>
+            </span>
+        </div>
+                <button id="shootButton" class="confirm" onclick="getComputerChoice()">Shoot!</button>
+                <button id="replayButton" class="confirm invisible" onclick="playAgain()">Play Again.</button>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+* {
+    --hover: rgba(19, 141, 185, 0.5);
+    --selected: rgba(39, 238, 245, 0.8);
+    --background: rgb(18, 24, 31);
+    --content: rgb(58, 58, 61);
+    --lightbg: rgb(90, 89, 92);
+    --header: rgb(39, 44, 58);
+    --lightText: rgb(183, 189, 214);
+    --optionBG: rgb(68, 68, 75);
+}
+body {
+    background-color: var(--background);
+}
+
+.content {
+    min-width: 1130px;
+    width: 80%;
+    max-width: 80%;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: var(--content);
+    border-radius: 10px;
+}
+.header {
+    min-width: 100%;
+    min-height: 50px;
+    background-color: var(--header);
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid var(--background);
+    display: flex;
+    align-items: center;
+}
+.header h1 {
+    color: var(--lightText);
+    margin: 0px 10px 0px 10px;
+}
+.display {
+    min-height: 700px;
+    max-height: 700px;
+    min-width: 100%;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;    
+}
+.resultContianer {
+    min-width: 72%;
+    max-width: 72%;
+    min-height: 500px;
+    border: 2px solid var(--background);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--lightbg);
+
+}
+
+.computerChoice {
+    height: 100%;
+    font-size: 200px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.optionsSection {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.optionsBody {
+    min-width: 72%;
+    max-width: 72%;
+    display: flex;
+    flex-direction: column;
+}
+.optionsHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header);
+    min-width: 100%;
+    margin-top: 20px;
+    border-radius: 10px 10px 0px 0px;
+    max-height: 50px;
+    border-bottom: 2px solid var(--background);
+}
+.optionsHeader h1 {
+    margin: 12px 0px 12px 0px;
+    color: var(--lightText);
+}
+.optionsContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    border: 2px solid var(--background);
+    border-top: none;
+    border-radius: 0px 0px 10px 10px;
+    background-color: var(--optionBG);
+}
+.option {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 225px;
+    max-width: 225px;
+    min-height: 200px;
+    justify-content: flex-end;
+    border: 2px solid var(--background);
+    border-radius: 15px;
+    align-items: center;
+    background-color: var(--lightbg);
+    margin: 10px 20px 0px 20px;
+}
+.option:hover, .confirm:hover {
+    box-shadow: 0 0 12px 2px var(--hover);
+    text-shadow: 1px 1px 2px var(--hover);
+}
+.option:has(input:checked) {
+    box-shadow: 0 0 12px 2px var(--selected);
+    text-shadow: 1px 1px 2px var(--selected);
+}
+.option i {
+    font-size: 100px;
+    margin-bottom: 5px;
+}
+.option input {
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.locked {
+    opacity: .6;
+    pointer-events: none;
+}
+
+
+.confirm {
+    max-width: 50%;
+    min-width: 50%;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 0px;
+    background-color: unset;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--lightbg);
+    border: 2px solid var(--background);
+    cursor: pointer;
+}
+
+.invisible {
+    display: none;
+    visibility: hidden;
+}

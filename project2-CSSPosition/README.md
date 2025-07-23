@@ -2,7 +2,7 @@
 <p>Advancing my web-development knowledge through completing the Odin Project.</p>
 
 <h1>Project Two: CSS Positioning</h1>
-<p>Project one demonstrates my understanding of CSS for styling web-pages and positioning content.</p>
+<p>Project two demonstrates my understanding of CSS for styling web-pages and positioning content.</p>
 <p>The project details are as follows:</p>
 <ul>
 <li><p>Create an styled web-page to represent <a href="https://cdn.statically.io/gh/TheOdinProject/curriculum/81a5d553f4073e593d23a6ab00d50eef8620796d/foundations/html_css/project/imgs/01.png">this page</a><br>This demonstrates the following:</p>
