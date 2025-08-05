@@ -15,4 +15,4 @@
 <br>
 <p>Between this and project one, we have demonstrated a solid understanding of creating static websites.
 <br>
-<a href="https://evan-alewine.github.io/the-odin-project/projectTwo-CSSPosition/">Project Live Preview</a>
+<a href="https://evan-alewine.github.io/the-odin-project/project2-CSSPosition/">Project Live Preview</a>

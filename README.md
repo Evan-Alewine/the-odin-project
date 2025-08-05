@@ -7,7 +7,8 @@
 
 <h1>Projects:</h1>
 
-<h2>Project One: Recipes</h2>
+<details>
+<summary><h2>Project One: Recipes</h2></summary>
 <p>Project one demonstrates my understanding of HTML for adding content and structuring web-pages, this is a simple project simply to introduce the concept of HTML to new learners.</p>
 <p>The project details are as follows:</p>
 <ul>
@@ -18,10 +19,12 @@
 </ol>
 </ul>
 <br>
-<a href="https://evan-alewine.github.io/the-odin-project/projectOne-Recipes/">Project Live Preview</a>
+<a href="https://evan-alewine.github.io/the-odin-project/project1-Recipes/">Project Live Preview</a>
+</details>
 <br>
 
-<h2>Project Two: CSS Positioning</h2>
+<details>
+<summary><h2>Project Two: CSS Positioning</h2></summary>
 <p>Project two demonstrates my understanding of CSS for styling web-pages and positioning content.</p>
 <p>The project details are as follows:</p>
 <ul>
@@ -35,10 +38,12 @@
 <p>Between this and project one, we have demonstrated a solid understanding of creating static websites.
 </ul>
 <br>
-<a href="https://evan-alewine.github.io/the-odin-project/projectTwo-CSSPosition/">Project Live Preview</a>
+<a href="https://evan-alewine.github.io/the-odin-project/project2-CSSPosition/">Project Live Preview</a>
+</details>
 <br>
 
-<h2>Project Three: Rock Paper Scissors Game</h2>
+<details>
+<summary><h2>Project Three: Rock Paper Scissors Game</h2></summary>
 <p>Project Three demonstrates my understanding of JavaScript for modifying webpages on the user-end. While the project instructions wanted a text based game, I decided to go with a more UI focused vision.</p>
 <p>The project details are as follows:</p>
 <ul>
@@ -52,4 +57,5 @@
 </ul>
 <br>
 <a href="https://evan-alewine.github.io/the-odin-project/project3-RockPaperScissors/">Project Live Preview</a>
+</details>
 <br>
