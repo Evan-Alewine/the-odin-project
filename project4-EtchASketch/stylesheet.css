@@ -1,0 +1,71 @@
+* {
+    --hover: rgba(19, 141, 185, 0.5);
+    --selected: rgba(39, 238, 245, 0.8);
+    --background: rgb(18, 24, 31);
+    --content: rgb(58, 58, 61);
+    --lightbg: rgb(90, 89, 92);
+    --header: rgb(39, 44, 58);
+    --lightText: rgb(183, 189, 214);
+    --optionBG: rgb(68, 68, 75);
+}
+body {
+    background-color: var(--background);
+}
+.bodyDiv {
+    display: flex;
+    justify-content: center;
+}
+.content {
+    min-width: 1130px;
+    max-width: 1130px;
+    min-height: 1000px;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: var(--content);
+    border-radius: 10px;
+}
+.header {
+    min-width: 100%;
+    min-height: 50px;
+    background-color: var(--header);
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header h1 {
+    color: var(--lightText);
+    padding-left: 10px;
+}
+.userInput {
+    padding-right: 10px;
+    color: var(--lightText);
+    font-weight: bold;
+}
+.display {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+.interface {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 863px;
+    border: 2px solid var(--background);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightbg);
+    overflow: clip;
+}
+.gridRow {
+    display: flex;
+    flex: 1 1;
+}
+.gridSquare {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    flex: 1 1;
+}
