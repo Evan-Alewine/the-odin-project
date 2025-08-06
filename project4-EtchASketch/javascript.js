@@ -23,3 +23,7 @@ function createGrid() {
 function changeColor() {
   this.style.backgroundColor = 'black';
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+    createGrid();
+});

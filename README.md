@@ -72,7 +72,6 @@
 </li>
 </ul>
 <br>
-<br>
 <a href="https://evan-alewine.github.io/the-odin-project/project4-EtchASketch/">Project Live Preview</a>
 </details>
 
