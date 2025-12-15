@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div class="bodyDiv">
+        <div class="content">
+        <div class="header">
+            <h1>Calculator</h1>
+        </div>
+
+            <div class="display">
+                <div class="interface">
+                    <div class="interfaceHeader">
+                        <div class="displayInput">
+                            <p>
+                                <span id="valueX" class="invisible">0</span>
+                                <span id="operator" class="invisible">+</span>
+                                <span id="valueY" class="invisible">0</span>
+                                <span id="equate" class="invisible">=</span>
+                            </p>
+                        </div>
+                        <div class="displayOutput">
+                            <p>
+                                <span id="input">0</span>
+                            </p>
+                            
+                            <button id="Clear" onclick="clearInput()">Clear <span class="tooltip">Clears current input, double click to reset</span></button>
+                        </div>
+                    </div>
+
+                    <div class="displayBody">
+                        <div class="buttonGrid">
+                            <button id="Calc" onclick="calculate()">Calculate</button>
+                            <button class="number" value="7" onclick="append(this.value)">7</button>
+                            <button class="number" value="8" onclick="append(this.value)">8</button>
+                            <button class="number" value="9" onclick="append(this.value)">9</button>
+                            <button class="operator" id="Plus" value="+" onclick="operand(this.value)">+</button>
+                            <button class="number" value="4" onclick="append(this.value)">4</button>
+                            <button class="number" value="5" onclick="append(this.value)">5</button>
+                            <button class="number" value="6" onclick="append(this.value)">6</button>
+                            <button class="operator" id="Minus" value="-" onclick="operand(this.value)">-</button> 
+                            <button class="number" value="1" onclick="append(this.value)">1</button>
+                            <button class="number" value="2" onclick="append(this.value)">2</button>
+                            <button class="number" value="3" onclick="append(this.value)">3</button>
+                            <button class="operator" id="Multiply" value="*" onclick="operand(this.value)">*</button>
+                            <button class="operator" id="Negative" onclick="makeNegative()">±</button> 
+                            <button class="number" value="0" onclick="append(this.value)">0</button>
+                            <button class="number" id="Period" onclick="decimalify()">.</button>
+                            <button class="operator" id="Divide" value="/" onclick="operand(this.value)">/</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
