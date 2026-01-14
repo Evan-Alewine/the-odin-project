@@ -95,5 +95,25 @@
 <a href="https://evan-alewine.github.io/the-odin-project/project5-Calculator/">Project Live Preview</a>
 </details>
 
+<details style="margin-bottom: 0px;">
+<summary><h2>Project Six: Web Forms</h2></summary>
+<p>Project Six demonstrates my understanding of HTML forms, form validation, and related CSS styling.</p>
+<p>The project details are as follows:</p>
+<ul>
+<li>Create user input fields and verify entries in accordance with their pattern attributes.
+<ol>
+<li>Use HTML inputs to accept entries.
+<ul><li>Ensure entries are in acceptable formats using pattern=""</li></ul>
+</li>
+</ol>
+</li>
+</ul>
+<br>
+<br>
+<a href="https://evan-alewine.github.io/the-odin-project/project6-HTMLForms/">Project Live Preview</a>
+</details>
+
+
+
 
 

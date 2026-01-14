@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="mainContent">
+        <div class="leftPanel">
+            <div class="banner">
+                <img src="./assets/odin-lined.png">
+                <h1>Odin</h1>
+            </div>
+            <p class="credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplashed</a></p>
+        </div>
+
+        <div class="rightPanel">
+            <p class="mainText section">This is not a real online service! This is a demonstration of my web development skills and understanding of <em>HTML Forms</em>.<br><span class="topSpacing">Feel free to try it.</span></p>
+
+            <div class="signupForm">
+
+                <form>
+                    <div class="emphasis section">
+                    <h3>Let's do this!</h3>
+                    <fieldset>
+                        
+                        <label for="firstname">First Name</label>
+                        <label for="lastname">Last Name</label>
+                        
+                        <input type="text" id="firstname" name="firstname" placeholder="John" required>
+                        <input type="text" id="lastname" name="lastname" placeholder="Doe" required>
+
+                        <label for="email">Email</label>
+                        <label for="phoneNumber">Phone Number</label>
+
+                        <input type="email" id="email" name="email" placeholder="johndoe@domain.com" required>
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phoneNumber" name="phoneNumber" placeholder="999-999-9999" required>
+
+                        <label for="password">Password</label>
+                        <label for="password2">Confirm Password</label>
+                        
+                        <input type="password" id="password" name="password" pattern="(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must be at least 8 characters long and contain at least one number or special character, one uppercase letter, and one lowercase letter" required>
+                        <input type="password" id="password2" name="password2" pattern="(?=.*[\d\W])(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Passwords must match" required>
+
+                    </fieldset>
+                    </div>
+                    
+                    <div class="section">
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a class="signIn">Log in</a></p>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
