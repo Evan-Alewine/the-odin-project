@@ -1,0 +1,215 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./assets/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
+:root {
+    --dash-blue: rgb(25, 146, 212);
+    --body-gray: rgb(226, 232, 240);
+    font-family: Roboto;
+}
+
+.makeCircle {
+    border-radius: 50%;
+}
+.unbolded {
+    font-weight: 500;
+}
+
+
+body {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: minmax(auto, max-content) auto;
+    height: 100vh;
+}
+
+.nav {
+    background-color: var(--dash-blue);
+    padding-left: 1.5rem;
+    fill: white;
+    color: white;
+    padding: 0 6rem 0 1rem;
+}
+
+.nav div {
+    display: grid;
+    grid-template-columns: minmax(auto, max-content) minmax(auto, max-content);
+    justify-content: start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.navSection {
+    padding-bottom: 2rem;
+}
+
+.nav div:first-of-type {
+    padding-top: 0.5rem;
+}
+
+.nav div:first-of-type svg {
+    width: 3rem;
+}
+
+svg {
+    width: 2rem;
+}
+.content {
+    display: grid;
+    grid-template-rows: 1fr 4fr ;
+}
+.header {
+    background-color: white;
+    filter: drop-shadow(0 0.1rem 0.25rem rgba(0,0,0,0.3));
+    padding: 0 5rem 1rem 3rem;
+    display: grid;
+    justify-content: start;
+    align-items: center;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.search {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    justify-content: start;
+    align-items: center;
+}
+.search input {
+    background-color: var(--body-gray);
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 6fr 3fr 6fr;
+    justify-items: end;
+    align-items: center;
+}
+
+.profile img {
+    width: 4rem;
+}
+
+div:has( > .greeting) {
+    display: grid;
+    grid-template-columns: 1fr 15fr;
+    gap: 1.5rem;
+}
+
+div:has( > .greeting) > img {
+    width: 6rem;
+}
+
+.greeting {
+    display: grid;
+    grid-template-rows: min-content;
+    align-content: center;
+}
+.greeting * {
+    margin: 0px;
+}
+.headerButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: end;
+}
+.headerButtons button {
+    background-color: var(--dash-blue);
+    color: white;
+    font-size: 1rem;
+    border: none;
+    font-weight: 900;
+    border-radius: 5rem;
+    padding: 1rem;
+    width: 8rem;
+    
+}
+.contentBody {
+    background-color: var(--body-gray);
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    padding: 1rem 2rem;
+}
+.projectContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.projectContainer > div, .trendingUsers, .annoucementContent{
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem 0.5rem;
+    filter: drop-shadow(0 0.1rem 0.25rem rgba(0,0,0,0.3));
+}
+.projectContainer > div {
+    border-left: 0.5rem solid goldenrod;
+}
+
+.projectContainer > div h2 {
+    margin-bottom: 0.25rem;
+}
+.projectContainer p {
+    margin-top: 0px;
+    color: rgb(99,99,99);
+    font-size: 1.25rem;
+}
+.projectIcons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding-left: 18rem;
+}
+.projectIcons svg {
+    fill: rgb(50, 50, 50);
+}
+.sidepanel {
+    padding-left: 2rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1rem;
+}
+.annoucementContent, .trendingUsers {
+    padding: 1.5rem 2rem 0.5rem 2rem;
+}
+.annoucementContent div:not(:last-of-type) {
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.annoucementContent h3 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+.annoucementContent p, .trendingUsers p {
+    margin-top: 0;
+    font-size: .9rem;
+    color: rgb(99,99,99);
+    margin-bottom: 1rem;
+}
+.trendingUsers > div {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.trendingUsers img {
+    width: 4rem;
+}
+.trendingUsers > div > div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    align-content: end;
+    margin-top: 1rem;
+}
+.trendingUsers h5 {
+    font-weight: 450;
+    font-size: 1rem;
+    margin: 0;
+}
+.trendingUsers p {
+    font-size: 1rem;
+}
